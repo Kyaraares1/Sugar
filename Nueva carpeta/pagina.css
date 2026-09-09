@@ -1,0 +1,329 @@
+@font-face{
+    font-family: 'Elsie-Black';
+    src: url('Elsie-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Elsie-Regular';
+  src: url('Elsie-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background: linear-gradient(
+        180deg,
+        #f317b5 0%,
+        #f25ec8 28%,
+        #FFA84F 55%,
+        #ADEEC5 80%,
+        #82eca9 100%
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x:hidden;
+}
+
+.Encabezado{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Marca{
+  display: flex;
+  flex-direction: column;
+}
+
+.Sugar{
+  font-family: 'Elsie-Black';
+  color: white;
+  font-size: 350%;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.CoffeeGames{
+ font-family: 'Times New Roman';
+  color: white;
+  margin-top: 5px;
+  margin-left: 80px;
+  font-size: 150%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.Registrarse {
+  font-family: 'Elsie-Black';
+  color: white;
+   position: relative;
+   bottom: 150px;
+   margin-top: 40px;
+   left: 1000px;
+}
+
+.CajaContenedora {
+  background: #FFA84F;
+  min-height: 100vh;
+  margin: 20px 40px;
+  padding:25px;
+  border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+                0 4px 6px rgba(242, 94, 200, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.CajaContenedora:hover {
+    transform: translateY(-6px) rotateX(4deg);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22),
+                0 8px 12px rgba(242, 94, 200, 0.4);
+ }
+
+ .Inicio{
+  font-family: 'Elsie-Black';
+  color: white;
+  font-size: 35px;
+  margin-bottom: auto;
+ }
+  
+  .Foto1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .Foto1 img{
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+ }
+
+ .Parrafo{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: xx-large;
+  font-weight: normal;
+ }
+
+ .Opciones{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 40px;
+ }
+
+  .CajaIzquierda {
+    background: linear-gradient(145deg, #fe9de3, #f25ec8, #f317b5);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 90px;
+    margin: 25px;
+    border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+                0 4px 6px rgba(242, 94, 200, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.CajaIzquierda:hover {
+    transform: translateY(-6px) rotateX(4deg);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22),
+                0 8px 12px rgba(242, 94, 200, 0.4);
+}
+
+.Menu, .Juegos, .Reserva{
+  font-family: 'Elsie-Black';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+  .CajaMedio{
+    background: linear-gradient(145deg,#fabf84, #FFA84F, #f98b1c);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 25% ;
+    height: 90px;
+    margin: 25px ;
+    border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+                0 4px 6px rgba(242, 94, 200, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.CajaMedio:hover {
+    transform: translateY(-6px) rotateX(4deg);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22),
+                0 8px 12px rgba(242, 94, 200, 0.4);
+}
+
+  .CajaDerecha{
+    background: linear-gradient(145deg, #c7f9d9, #ADEEC5,#82eca9);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 25% ;
+    height: 90px;
+    margin: 25px ;
+    border-radius: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+                0 4px 6px rgba(242, 94, 200, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.CajaDerecha:hover {
+    transform: translateY(-6px) rotateX(4deg);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.22),
+                0 8px 12px rgba(242, 94, 200, 0.4);   
+}
+
+.InformacionContacto{
+  font-family: 'Elsie-Black';
+  color: white;
+  position: relative;
+  left: 2%;
+}
+
+.info{
+  font-family:'Times New Roman', Times, serif ;
+  color: black;
+  position: relative;
+  left: 2%;
+}
+
+
+@media screen and (max-width:768px){
+  .Encabezado{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .Sugar{
+    font-size: 45px;
+  }
+
+  .CoffeeGames{
+    font-size: 21px;
+    margin-left: 40px;
+  }
+
+  .Registrarse{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .CajaContenedora{
+    margin: 15px 20px;
+    padding:20px;
+  }
+
+  .Inicio{
+    font-size: 30px;
+  }
+
+  .Foto1 img{
+    max-height: 300px;
+  }
+
+  .Opciones{
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 15px;
+  }
+
+  .CajaIzquierda, .CajaMedio, .CajaDerecha{
+    width: 100%;
+  }
+
+  .InformacionContacto{
+    margin-left: 20px;
+  }
+
+  .info{
+    margin-left: 20px;
+  }
+}
+
+  @media screen and (max-width: 480px) {
+    .Encabezado{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .Sugar{
+    font-size: 45px;
+  }
+
+  .CoffeeGames{
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  .Registrarse{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .CajaContenedora{
+    margin: 10px 15px;
+    padding:15px;
+  }
+
+  .Inicio{
+    font-size: 26px;
+  }
+
+  .Foto1 img{
+    max-height: 200px;
+  }
+
+  .Parrafo{
+    font-size: 16px;
+  }
+
+  .Opciones{
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  .CajaIzquierda, .CajaMedio, .CajaDerecha{
+    width: 70%;
+  }
+
+  .InformacionContacto{
+    margin-left: 15px;
+  }
+
+  .info{
+    margin-left: 15px;
+  }
+  }
