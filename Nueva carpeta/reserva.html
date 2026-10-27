@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Coffee & Games - Reserva </title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+
+<body>
+    <section class="Encabezado">
+        <header>
+            <div class="Marca">
+                <div class="Sugar"> Sugar </div>
+                <div class="CoffeeGames"> Coffee & Games </div>
+            </div>
+        </header>
+    </section>
+
+    <main id="reserva" class="ListaDeJuegos">
+
+        <div class="introduccion">
+            <h2>Reservá tu lugar</h2>
+            <p>Asegurá tu mesa para disfrutar de nuestro café y la zona de juegos.</p>
+        </div>
+
+    
+        <section class="categoria">
+            <form class="formulario-registro">
+                
+                <div class="campo-form">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="telefono">Teléfono / WhatsApp</label>
+                    <input type="tel" id="telefono" placeholder="Ej: 11 1234 5678" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="personas">Cantidad de personas</label>
+                    <select id="personas" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3-4">3 a 4 personas</option>
+                        <option value="5-6">5 a 6 personas</option>
+                        <option value="7+">7 o más (Evento/Cumpleaños)</option>
+                    </select>
+                </div>
+
+                <div class="campo-form">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="hora">Horario</label>
+                    <input type="time" id="hora" required>
+                </div>
+
+                <div class="campo-form">
+                    <label for="zona">Zona preferida</label>
+                    <select id="zona">
+                        <option value="cafeteria">Cafetería tradicional</option>
+                        <option value="juegos">Zona de juegos de mesa</option>
+                        <option value="arcade">Zona Arcade</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar Reserva</button>
+
+            </form>
+        </section>
+
+        <div class="volver">
+            <a href="pagina2.html">← Volver al inicio</a>
+        </div>
+
+    </main>
+
+    <footer id="inicio" class="pie-pagina">
+        <h4>Sugar Coffee & Games</h4>
+        <p>El lugar donde los sabores y la diversión se encuentran.</p>
+    </footer>
+
+</body>
+</html>

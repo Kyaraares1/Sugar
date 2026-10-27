@@ -108,7 +108,7 @@ a{
 
   .Foto1 img{
     width: 100%;
-    max-height: 450px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -150,7 +150,7 @@ a{
                 0 8px 12px rgba(242, 94, 200, 0.4);
 }
 
-.Menu, .Juegos, .Reserva{
+.botonMenu, .botonJuegos, .botonReserva{
   font-family: 'Elsie-Black';
   color: white;
   font-size: 20px;
@@ -327,3 +327,562 @@ a{
     margin-left: 15px;
   }
   }
+
+.MenuCompleto {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: linear-gradient(
+        to bottom,
+        #f52bb5 0%,
+        #ffb05e 40%,
+        #83edbc 100%
+    );
+    color: #321b19;
+    min-height: 100vh;
+    padding: 20px 6%;
+}
+
+
+.encabezado {
+    max-width: 1080px;
+    margin: 0 auto 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navegacion .boton-menu {
+    background-color: #ed159e;
+    padding: 12px 22px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #a72b6950;
+}
+
+
+.MenuCompleto {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 16px 38px 18px;
+    background-color: #ffa34e;
+    border: 4px solid #ffb968;
+    border-radius: 22px;
+    box-shadow: 0 8px 12px #713f3240;
+}
+
+
+.introduccion {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.introduccion h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 2px;
+}
+
+.introduccion p {
+    font-size: 17px;
+}
+
+
+.categoria {
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.categoria h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.categoria h3::after {
+    content: "";
+    height: 2px;
+    background-color: white;
+    flex: 1;
+}
+
+
+.Productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-producto {
+    background-color: #fff8f1;
+    padding: 8px;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 5px 9px #793d2840;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 116px;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contenido-producto {
+    padding: 8px 6px 3px;
+}
+
+.contenido-producto h4 {
+    color: #e91591;
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+
+.contenido-producto p {
+    font-size: 14px;
+    line-height: 1.3;
+    min-height: 36px;
+}
+
+.precio {
+    display: block;
+    color: #e99543;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.volver {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.volver a {
+    display: inline-block;
+    background-color: #ec159d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 3px solid #ff78c8;
+    box-shadow: 0 4px 7px #8f315450;
+}
+
+
+.pie-pagina {
+    text-align: center;
+    color: white;
+    padding: 22px 10px 12px;
+}
+
+.pie-pagina h4 {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.pie-pagina p {
+    font-size: 15px;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        padding: 15px 3%;
+    }
+
+    .MenuCompleto {
+        padding: 18px;
+    }
+
+    .Productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .categoria h3 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .encabezado {
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 38px;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    .navegacion {
+        gap: 12px;
+    }
+
+    .navegacion a {
+        font-size: 15px;
+    }
+
+    .navegacion .boton-menu {
+        padding: 9px 13px;
+    }
+
+    .MenuCompleto {
+        padding: 15px 12px;
+    }
+
+    .introduccion h2 {
+        font-size: 32px;
+    }
+
+    .introduccion p {
+        font-size: 14px;
+    }
+
+    .Productos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-producto img {
+        height: 180px;
+    }
+
+    .categoria h3 {
+        font-size: 25px;
+    }
+}
+}
+
+.ListaDeJuegos{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif, Arial;
+}
+
+
+body {
+  background: linear-gradient(180deg, #F92EAA 0%, #FF9A43 45%, #92E8C0 100%);
+  background-attachment: fixed;
+  color: #333;
+  padding: 20px;
+}
+
+
+.Encabezado {
+  max-width: 950px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Marca {
+  color: #FFFFFF;
+}
+
+.Sugar {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.CoffeeGames {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: -2px;
+}
+
+
+.ListaDeJuegos {
+  background: #FFA84F;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 35px 30px;
+  border-radius: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+              0 4px 6px rgba(242, 94, 200, 0.3);
+}
+
+
+.introduccion {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.introduccion h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.introduccion p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+
+.categoria {
+  margin-bottom: 35px;
+}
+
+.categoria h3 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 5px;
+}
+
+
+.Productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.tarjeta-producto {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.contenido-producto {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contenido-producto h4 {
+  color: #D81B80;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.contenido-producto p {
+  font-size: 0.82rem;
+  color: #555555;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+
+.precio {
+  align-self: flex-start;
+  background: #FFB356;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+
+.volver {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.volver a {
+  display: inline-block;
+  background: #E6399B;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 28px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.volver a:hover {
+  background: #d4278a;
+  transform: translateY(-2px);
+}
+
+
+.pie-pagina {
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+.pie-pagina h4 {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.pie-pagina p {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 3px;
+}
+
+
+@media (max-width: 768px) {
+  .Productos {
+    grid-template-columns: 1fr;
+  }
+  
+  .ListaDeJuegos {
+    margin: 10px;
+    padding: 20px 15px;
+  }
+  
+  .Sugar {
+    font-size: 2.2rem;
+  }
+}
+}
+
+.Registrarse{
+.formulario-registro {
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.campo-form label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #D81B80;
+  margin-bottom: 5px;
+}
+
+.campo-form input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.campo-form input:focus {
+  border-color: #F92EAA;
+}
+
+.btn-enviar {
+  background: #FFB356;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+  background: #f79f32;
+  transform: translateY(-2px);
+}
+}
+
+.Reserva{
+  .campo-form select {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #FFFFFF;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.campo-form select:focus {
+  border-color: #F92EAA;
+}
+}
